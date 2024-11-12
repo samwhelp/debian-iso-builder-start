@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+
+##
+## ## Change installer icon name to DEMO-OS
+##
+
+sed -i -e 's|Debian|DEMO-OS|g' /usr/share/applications/install-debian.desktop
+#sed -i -e 's|^ *Icon=install-debian|Icon=/usr/share/images/vendor-logos/logo.svg|' /usr/share/applications/install-debian.desktop
