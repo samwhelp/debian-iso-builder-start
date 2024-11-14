@@ -507,6 +507,24 @@ mod_target_os_locale () {
 ### Head: Model / Build Target OS / Package Management
 ##
 
+mod_target_os_factory_package_management () {
+
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## Factory Package Management"
+	util_error_echo "##"
+	util_error_echo
+
+
+
+
+	mod_target_os_package_install_keyring
+
+
+	return 0
+}
+
 mod_target_os_package_management () {
 
 
@@ -1371,7 +1389,7 @@ mod_test () {
 
 
 	#mod_target_os_factory_overlay
-	#mod_target_os_package_install_keyring
+	#mod_target_os_factory_package_management
 	#mod_target_os_factory_locale
 
 
@@ -1413,7 +1431,7 @@ mod_steps () {
 
 
 	mod_target_os_factory_overlay
-	mod_target_os_package_install_keyring
+	mod_target_os_factory_package_management
 	mod_target_os_factory_locale
 
 
