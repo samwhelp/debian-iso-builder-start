@@ -1371,6 +1371,7 @@ mod_test () {
 
 
 	#mod_target_os_factory_overlay
+	#mod_target_os_package_install_keyring
 	#mod_target_os_factory_locale
 
 
@@ -1412,6 +1413,7 @@ mod_steps () {
 
 
 	mod_target_os_factory_overlay
+	mod_target_os_package_install_keyring
 	mod_target_os_factory_locale
 
 
