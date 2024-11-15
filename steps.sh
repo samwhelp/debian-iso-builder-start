@@ -1287,7 +1287,7 @@ mod_iso_build () {
 ## https://github.com/GXDE-OS/gxde-iso-builder/blob/main/build-squashfs.sh#L9-L18
 ##
 
-function sys_chroot_run () {
+sys_chroot_run () {
 
 	#util_error_echo "${@}"
 	#return 0
@@ -1317,7 +1317,7 @@ function sys_chroot_run () {
 ## https://github.com/GXDE-OS/gxde-iso-builder/blob/main/build-squashfs.sh#L2-L8
 ##
 
-function sys_chroot_package_control () {
+sys_chroot_package_control () {
 
 	if [[ ${THE_PACKAGE_CONTROL_AGENT} == "apt" ]]; then
 
@@ -1336,7 +1336,7 @@ function sys_chroot_package_control () {
 ## https://github.com/GXDE-OS/gxde-iso-builder/blob/main/build-squashfs.sh#L19-L36
 ##
 
-function mod_target_os_unmount () {
+mod_target_os_unmount () {
 
 	local rootfs="${THE_MASTER_OS_ROOT_DIR_PATH}"
 
@@ -1344,7 +1344,7 @@ function mod_target_os_unmount () {
 
 }
 
-function sys_target_os_unmount () {
+sys_target_os_unmount () {
 
 	local rootfs="${1}"
 
