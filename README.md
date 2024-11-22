@@ -13,3 +13,4 @@
 
 * [gxde-iso-builder](https://github.com/GXDE-OS/gxde-iso-builder)
 * [eznixos-adjustment-xfce](https://github.com/samwhelp/eznixos-adjustment-iso-profile-start/tree/main/debian-12/locale/en_us/eznixos-adjustment-xfce)
+* [lika-live-build-config](https://github.com/samwhelp/lika-live-build-config)
